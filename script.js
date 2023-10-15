@@ -13,10 +13,12 @@ loginLink.addEventListener('click',()=> {
 	wrapper.classList.remove('active');
 })
 
-btnPopup.addEventListener('click',()=> {
-	wrapper.classList.add('active-popup');
-})
 
-iconClose.addEventListener('click',()=> {
-	wrapper.classList.remove('active-popup');
-})
+/*read in email and password when trying to log in*/
+document.getElementById('login_button').addEventListener('click', async () =>  {
+  const login_email = document.getElementById('login_email_value').value;
+  console.log(login_email)
+
+  const login_password = document.getElementById('login_password_value').value;
+  console.log(login_password)
+});
